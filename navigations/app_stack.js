@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 //import moment from "moment";
 
 import Login from "../pages/login";
+import Register from "../pages/register";
 import DrawerMenu from "./menu_drawer";
 import SearchBox from "./search_stack";
 
@@ -21,6 +22,7 @@ class AppStack extends React.Component {
         }}
       >
         <Stack.Screen name="login_stack" component={Login} />
+        <Stack.Screen name="register_stack" component={Register} />
         <Stack.Screen name="menu_drawer" component={DrawerMenu} />
         <Stack.Screen name="search_stack" component={SearchBox} />
       </Stack.Navigator>

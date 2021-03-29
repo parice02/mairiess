@@ -80,6 +80,11 @@ class Login extends React.Component {
     } */
   };
 
+  navigate_to_register = () => {
+    const { navigation } = this.props;
+    navigation.navigate("register_stack");
+  };
+
   render() {
     const { constants } = this.props;
     const { colors } = constants;
@@ -181,6 +186,20 @@ class Login extends React.Component {
               >
                 <Text color={colors.light} style={[styles.text_sign]}>
                   Se connecter
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={this.navigate_to_register}
+                style={[
+                  styles.sign_in,
+                  {
+                    backgroundColor: color(colors.maincolor).lighten(0.4).hex(),
+                    marginTop: 10,
+                  },
+                ]}
+              >
+                <Text color={colors.light} style={[styles.text_sign]}>
+                  S'enregistrer
                 </Text>
               </TouchableOpacity>
             </View>

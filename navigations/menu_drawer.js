@@ -1,7 +1,6 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Dimensions } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 import Color from "color";
 import { connect } from "react-redux";
 import { Ionicons } from "react-native-vector-icons";

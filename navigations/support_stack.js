@@ -36,14 +36,12 @@ class MyStack extends React.Component {
           headerTitleAlign: "center",
           headerTintColor: icon_color,
           headerStyle: {
-            shadowColor: "#fff",
-            elevation: 0,
             backgroundColor: colors.maincolor,
           },
           headerLeft: () => (
             <Button padding margin transparent onPress={navigation.goBack}>
               <Ionicons
-                name={"md-arrow-back"}
+                name={"arrow-back"}
                 size={icon_size}
                 color={icon_color}
               />
@@ -61,7 +59,7 @@ class MyStack extends React.Component {
                   }}
                 >
                   <Ionicons
-                    name={`${os}-search`}
+                    name={"search"}
                     size={icon_size}
                     color={icon_color}
                   />

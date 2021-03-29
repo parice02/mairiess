@@ -1,14 +1,13 @@
 import React from "react";
 import { Platform, View } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Ionicons, MaterialCommunityIcons } from "react-native-vector-icons";
+import { Ionicons } from "react-native-vector-icons";
 import { Block, Button } from "expo-ui-kit";
 import { connect } from "react-redux";
 
 import Home from "../pages/home";
 import ContextMenu from "../components/context_menu";
 
-const os = Platform.OS === "android" ? "md" : "ios";
 const icon_size = 20;
 const icon_color = "white";
 
@@ -54,7 +53,7 @@ class MyStack extends React.Component {
               }
             >
               <Ionicons
-                name={route.name === "home_stack" ? "md-menu" : "md-arrow-back"}
+                name={route.name === "home_stack" ? "menu" : "arrow-back"}
                 size={icon_size}
                 color={icon_color}
               />
@@ -72,7 +71,7 @@ class MyStack extends React.Component {
                   }}
                 >
                   <Ionicons
-                    name={`${os}-search`}
+                    name={"search"}
                     size={icon_size}
                     color={icon_color}
                   />

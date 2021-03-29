@@ -71,7 +71,7 @@ class DrawerMenu extends React.Component {
                   }
                   icon={({ focused, size, color }) => (
                     <Ionicons
-                      name={`${os}-${item.icon}`}
+                      name={'${item.icon}'}
                       size={size}
                       color={color}
                     />
